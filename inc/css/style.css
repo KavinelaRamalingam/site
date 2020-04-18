@@ -1,0 +1,512 @@
+@charset "utf-8";
+
+/*------Mise en forme globale-----*/
+body {
+	background-color: #ed6fe6;
+	background-image: url("../img/recettes-gateaux-anna-olson-ee542d57.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*-----Mise en forme des titres------*/
+header img {
+	padding: 10px;
+	width: 10%;
+	display: inline-block;
+}
+
+
+
+
+
+
+/*-----Animation du logo-----*/
+#logo {
+	animation-name: moovelogo;
+	position: relative;
+	animation-duration: 3s;
+}
+
+@keyframes moovelogo {
+	from {
+		left: -200px;
+	}
+
+	to {
+		left: 0;
+	}
+}
+
+
+
+@keyframes titre {
+	from {
+		left: -150px;
+	}
+
+	to {
+		left: 0;
+	}
+
+}
+
+
+
+h1 {
+	font-family: 'Courgette', cursive;
+	color: deeppink;
+	font-size: 3en;
+	display: inline-block;
+	vertical-align: top;
+	width: 85%;
+	padding-top: 1.7%;
+	padding-bottom: 2%;
+	position: relative;
+	animation-name: titre;
+	animation-duration: 3s;
+}
+
+h2 {
+
+	font-size: 24px;
+	color: deeppink;
+	font-family: 'Courgette', cursive;
+	text-shadow: 2px 7px 5px yellow;
+	box-shadow: 0px 0px 5px black;
+	padding: 10px 40px;
+}
+
+h3 {
+	margin-top: 30px;
+	font-family: 'Courgette', cursive;
+	box-shadow: 1px 1px 2px inset orange;
+	padding: 20px;
+}
+
+/*------Mise en forme des principal-----*/
+/*---Emple du menu vertical
+#principal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: black;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 1px 1px 0px 1px;
+
+}
+
+#principal a {
+    display: block;
+    color: palevioletred;
+    font-family: sans-serif;
+    text-decoration: :none;
+    padding: 8px 16px;
+}
+
+#principal li {
+    text-align: :center;
+    border-bottom: 2px solid #A95282;
+}
+
+#principal li a:hover {
+    background-color: #A95282;
+    color: #fff;
+}----*/
+
+
+nav {
+	margin-top: 2%;
+}
+
+/*---exemple de menu horzontal----*/
+#principal {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #A95282;
+	border-radius: 5px;
+}
+
+#principal li {
+	float: left;
+	border-right: 1px solid #fff;
+}
+
+#principal li:last-child {
+	border: none;
+}
+
+#principal a {
+	display: block;
+	color: #fff;
+	font-family: sans-serif;
+	text-decoration: none;
+	text-align: center;
+	padding: 8px 16px;
+}
+
+#principal li a:hover {
+	background-color: black;
+	color: palevioletred;
+}
+
+/*------Mise en forme des paragraphs-----*/
+p {
+
+	text-align: justify;
+	font-size: 18px;
+	background-color: beige;
+	margin: 10px 15px;
+	display: inline-block;
+
+}
+
+#P1 {
+	width: 40%;
+	vertical-align: top;
+}
+
+#P2 {
+	width: 40%;
+}
+
+#concept {
+
+	text-align: center;
+}
+
+/*----Mise en forme section foodtruck-----*/
+
+.truck1 {
+	width: 35%;
+	vertical-align: top;
+	padding: 2%;
+}
+
+.truck2 {
+	display: inline-block;
+	width: 55%;
+	vertical-align: top;
+}
+
+table {
+	border: 20px;
+}
+
+audio {
+	position: relative;
+	left: 150px;
+}
+
+.food {
+	margin-top: 1.5%;
+}
+
+/*----tedt transition----*/
+#morph {
+	background-image: url("../img/Logo.png");
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+	-o-transition: background-image 3s, width 3s;
+	-moz-transition: background-image 3s, width 3s;
+	-webkit-transition: background-image 3s, width 3s;
+	transition: background-image 3s, width 3s;
+}
+
+#morph p {
+	color: saddlebrown;
+
+}
+
+#morph:hover {
+	background-image: url("../img/Gateaux2.jpg");
+	background-size: cover;
+	width: 75%;
+}
+
+#morph {
+	background: red;
+	width: 300px;
+	height: 300px;
+	-o-transition: background 3s, width 3s ease-out;
+	-moz-transition: background 3s, width 3s ease-out;
+	-webkit-transition: background 3s, width 3s ease-out;
+	transition: background 3s, width 3s ease-out;
+}
+
+#morph:hover {
+	background: yellow;
+
+	width: 75%;
+}
+
+/*-------test animation simple-
+#anim {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    -o-animation-name: cube;
+    -o-animation-duration: 5s;
+    -moz-animation-name: cube;
+    -moz-animation-duration: 5s;
+    -webkit-animation-name: cube;
+    -webkit-animation-duration: 5s;
+    animation-name: cube;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}---*/
+
+/*--- stytexde base pour les animation anim
+@keyframes cube {
+    from {
+        background-color: aquamarine;
+        width: 100px;
+    }
+
+    to {
+        background-color: darkblue;
+        width: 100%;
+    }
+}
+
+@-o-keyframes cube {
+    from {
+        background-color: aquamarine;
+        width: 100px;
+    }
+
+    to {
+        background-color: darkblue;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes cube {
+    from {
+        background-color: aquamarine;
+        width: 100px;
+    }
+
+    to {
+        background-color: darkblue;
+        width: 100%;
+    }
+}
+
+@-moz-keyframes cube {
+    from {
+        background-color: aquamarine;
+        width: 100px;
+    }
+
+    to {
+        background-color: darkblue;
+        width: 100%;
+    }
+}----*/
+
+
+video {
+	border: 10px bold pink;
+	border-radius: 100px;
+	width: 25%;
+}
+
+/*----Test animation complex---*/
+#anim2 {
+	width: 100px;
+	height: 100px;
+	background-color: darkgreen;
+	position: relative;
+	-o-animation-name: cube2;
+	-o-animation-duration: 7s;
+	-moz-animation-name: cube2;
+	-moz-animation-duration: 7s;
+	-webkit-animation-name: cube2;
+	-webkit-animation-duration: 7s;
+	animation-name: cube2;
+	animation-duration: 7s;
+
+
+}
+
+@keyframes cube2 {
+	0% {
+		left: 0;
+		top: 0;
+		border-radius: 0;
+	}
+
+	25% {
+		left: 300px;
+		top: 0;
+		background-color: brown;
+
+	}
+
+	50% {
+		left: 300px;
+		top: 300px;
+		background-color: cornflowerblue;
+		border-radius: 80%;
+	}
+
+	75% {
+		left: 0;
+		top: 300px;
+		background-color: crimson;
+		border-radius: 0;
+	}
+
+	100% {
+		left: 0;
+		top: 0;
+		background-color: darkorchid;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*--mise en forme du menu footer----*/
+#menufooter {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: deeppink;
+	color: #fff;
+}
+
+#menufooter li {
+	display: inline;
+	list-style: none;
+}
+
+#menufooter a {
+	display: inline-block;
+	background-color: deeppink;
+	color: #fff;
+	font-family: sans-serif;
+	text-decoration: :none;
+	text-align: center;
+	padding: 13px 16px;
+}
+
+#menufooter li a:hover {
+	background: black url("../img/fond.png") no-repeat;
+	color: lightpink;
+}
+
+
+/*--------mise en forme des tableaux----*/
+
+table,
+table th,
+table td {
+	border: 1px solid grey;
+}
+
+#conteneur {
+	margin-top: 50px;
+	border: 1px solid black;
+	display: flex;
+	height: 400px;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.element {
+	padding: 20px;
+	background-color: aqua;
+	border: 1px solid;
+
+}
+
+.element:nth-child(3) {
+	background-image: url("../img/Gateaux2.jpg");
+	padding: 30px;
+
+}
+
+/*----RESPONSIVE-----*/
+/*-------Ecran mobile----*/
+
+@media screen and (max-width:439px) {
+
+	body {
+		text-align: justify-all;
+	}
+
+	header {
+		text-align: center;
+		width: 100%;
+	}
+
+	h1 {
+		width: 100%;
+		margin-top: -1%;
+		animation-name: test;
+	}
+
+	header img {
+		width: 30%;
+	}
+
+	video {
+		width: 95%;
+	}
+
+	#principal {
+		border-radius: 20px;
+	}
+
+	#principal li {
+		display: block;
+		float: none;
+		border-right: 0;
+		border-bottom: 1px solid #fff;
+	}
+
+	#principal a {
+		padding: 16px 16px;
+	}
+
+	#anim2,
+		{
+		display: none;
+	}
+
+	#P1,
+	#P2 {
+		width: 95%;
+	}
+
+	.truck1 {
+		width: 95%;
+		margin: auto;
+	}
+
+	.truck2 {
+		width: 100%;
+		margin: 10px;
+	}
+
+	audio {
+		left: 0;
+		margin: auto;
+	}
+
+}
